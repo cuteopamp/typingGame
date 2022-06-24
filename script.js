@@ -15,10 +15,9 @@ let inputElement = document.querySelector(".input");
 const quoteElement = document.getElementById("quote");
 const messageElement = document.getElementById("message");
 const typedvalueElement = document.getElementById("typed-value");
-const musicbutton = document.getElementById("music-button");
 
 var highscoreElement = document.getElementById("highscore");
-var mymodal = document.getElementById("modal-block");
+var mymodal = document.querySelector(".modal-block");
 var closeSpan = document.getElementsByClassName("close")[0];
 
 
@@ -27,7 +26,7 @@ closeSpan.onclick = function(){
 }
 
 window.onclick = function(event) {
-    if (event.target = "modal") {
+    if (event.target = mymodal) {
         mymodal.style.display = "none";
     }
 }
@@ -66,6 +65,7 @@ typedvalueElement.addEventListener("input", () => {
         
         messageElement.innerText = message;
         inputElement.disabled = true;
+        mymodal.style.display = "block";
 
         if (person != null) {
             document.getElementById("msg").innerHTML = "Success!! Good job, " + person + " :)";
@@ -73,9 +73,9 @@ typedvalueElement.addEventListener("input", () => {
         else {
             document.getElementById("msg").innerHTML = "Who tf are you? >:(";
         }
-        mymodal.style.display = "block";
         
-        scoreTable(person, elapsedTime);
+        
+        //scoreTable(person, elapsedTime);
 
         
     }
@@ -94,7 +94,7 @@ typedvalueElement.addEventListener("input", () => {
         typedvalueElement.className = "error";
     }
 });
-
+/*
 highscoreElement.addEventListener("click", () => {
     highscoreElement.style.display = "none";
     r = localStorage.getItem("Highscores"?? "No Data");
@@ -102,12 +102,14 @@ highscoreElement.addEventListener("click", () => {
     rr = (JSON.parse(JSON.stringify(r)));
     console.log((rr))
 });
-
+*/
 function getName() {
     var person = prompt("Enter your nickname:", "CoolChiliPepper");
     return person;
 }
 
+// adjust to highscore table
+/*
 function scoreTable(currentPerson, elapsedTime) {
     
     result = {username : currentPerson, score : elapsedTime};
@@ -117,3 +119,4 @@ function scoreTable(currentPerson, elapsedTime) {
 
     localStorage.setItem("Highscores", highscores);
 }
+*/
