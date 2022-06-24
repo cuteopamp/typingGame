@@ -1,0 +1,194 @@
+body {
+    background-image: url("dunewp.jpg");
+    background-size: cover;
+    color: antiquewhite;
+}
+
+#t {
+    color: rgb(236, 208, 171);
+}
+#t:hover {
+    transform: scale(0.93);
+    color: rgb(176, 240, 245);
+}
+
+#y {
+    color: azure;
+}
+#y:hover {
+    transform: scale(0.95);
+    color: rgb(255, 97, 184);
+}
+
+#p {
+    color: rgb(143, 124, 230);
+}
+#p:hover {
+    transform: scale(0.9);
+    color: rgb(217, 255, 45);
+}
+
+#o {
+    color: rgb(231, 143, 172);
+}
+#o:hover {
+    transform: scale(0.98);
+    color: rgb(171, 186, 236);
+}
+
+#g {
+    color: rgb(162, 241, 146);
+}
+#g:hover {
+    transform: scale(0.89);
+    color: rgb(197, 94, 94);
+}
+
+#a {
+    color: rgb(155, 238, 213);
+}
+#a:hover {
+    transform: scale(0.98);
+    color: rgb(176, 255, 152);
+}
+
+#m {
+    color: rgb(255, 192, 155);
+}
+#m:hover {
+    transform: scale(0.83);
+    color: rgb(194, 108, 108);
+}
+
+#e {
+    color: rgb(255, 252, 97);
+}
+#e:hover {
+    transform: scale(0.93);
+    color: rgb(122, 146, 255);
+}
+
+#t:hover {
+    transform: scale(0.99);
+    color: rgb(255, 126, 126);
+}
+
+#s {
+    color: rgb(255, 234, 50);
+}
+#s:hover {
+    transform: scale(0.93);
+    color: rgb(255, 155, 155);
+}
+
+
+.highlight {
+    background-color: rgb(73, 121, 138);
+}
+
+#quote {
+    color: rgb(226, 248, 255);
+    font-size: 25px;
+    margin-left: 18%;
+    margin-bottom: 15px;
+}
+
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+#title {
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    justify-content: center;
+    display: flex;
+}
+
+#title:hover{
+    transform: scale(1.02);
+}
+
+#q,
+#q2 {
+    font-size: 25px;
+    margin: 0px 0 10px 0;
+    display: center;
+    text-align: center;
+}
+
+#gereksiz:hover {
+    color: red;
+}
+
+#typed-value,
+#start,
+#message {
+    font-size: 30px;
+    margin-left: 35%;
+}
+
+#start {
+    margin-top: 10px;
+    margin-left: 45%;
+}
+
+#start:hover{
+    transform: scale(1.01);
+    color: red;
+    box-shadow: 0 0 20px 1px red;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-block {
+    display: none;
+    margin-left: 33%;
+    margin-top: 10px;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    background-color: rgb(0, 0, 0, 0.8);
+    overflow: auto;
+    width: 35%;
+    height: 20%;
+}
+
+#modal-content {
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+#highscore {
+    position: absolute;
+    top: 0;
+    right:5%;
+    font-size: 30px;
+    background-color: rgb(94, 59, 13);
+}
+
+#highscore:hover{
+    background-color: rgb(63, 41, 11);
+    transform: scale(1.03);
+}
+
+#music-button {
+    transform: translateY(350px);
+    border-radius: 0%;
+}

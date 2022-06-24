@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typo Game!</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <h1 id="title">
+      <span id="t">T</span>
+      <span id="y">y</span>
+      <span id="p">p</span>
+      <span id="o">o</span>
+      <span id="g"> G</span>
+      <span id="a">a</span>
+      <span id="m">m</span>
+      <span id="e">e</span>
+      <span id="s">!</span>
+    </h1>
+    <p id="q">How much keyboard master you are?</h2>
+    <p id="q2">Practice your typing skills with a quote from Dune. Click <b id="gereksiz"> start </b> to begin!</p>
+    <p id="quote"></p>
+    <p id="message"></p>
+
+    <audio id="music-button" controls autoplay loop>
+      <source src="dune_soundtrack.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="score-block">
+      <p id="highscore">Highscore Table</p>
+    </div>
+
+    <div id="gamecontent">
+        <input type="text" aria-label="current word" id="typed-value" class="input" />
+        <button type="button" id="start">Start</button>
+    </div>
+
+    <div class="modal-block">
+        <span class="close">&times;</span>
+        <div id="modal-content">
+            <p id="msg"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
