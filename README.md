@@ -6,5 +6,7 @@ correctly as fast as you can.
 *** TO FIX ***
 
 [ ] Highscores Table does not work yet.
+
 [ ] Audio player should be automatically played and invisible as the page renders but not.
+
 [ ] Case sensitivy is exhausting, for a more satisfying experience it should be changed.
